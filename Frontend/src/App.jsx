@@ -1,6 +1,6 @@
 import './App.css'
 import { Routes, Route } from "react-router-dom";
-import Navbar from './components/navbar/NavBar';
+import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import {createBrowserRouter,RouterProvider, Outlet} from "react-router-dom";
 import Gigs from './pages/gigs/Gigs';
@@ -21,8 +21,7 @@ function App() {
       <Footer />
     </div>
   );
- };
-    
+};    
 const router = createBrowserRouter([
   {
     path: "/",
@@ -59,13 +58,17 @@ const router = createBrowserRouter([
       {
         path:"/gig/:id",
         element: <Gig />
+      },
+      {
+        path:"/mygigs",
+        element: <Gigs />
       }
     ]
   }
 ]);
   return (
     <>
-      <Navbar />
+      <RouterProvider router={router} />
     </>
   )
 }

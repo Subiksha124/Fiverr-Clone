@@ -1,8 +1,11 @@
+import react from "react";
+import Featured from "../../components/featured/Featured";
+import TrustedBy from "../../components/trustedBy/trustedBy";
 const Home = () => {
   return (
     <div className="home">
-      <h1>Welcome to the Home Page</h1>
-      <p>This is a simple home page component.</p>
+        <Featured />
+        <TrustedBy />
     </div>
   );
 };
