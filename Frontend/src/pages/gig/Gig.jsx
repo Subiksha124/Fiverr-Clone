@@ -31,32 +31,25 @@ function Gig() {
               <span>5</span>
             </div>
           </div>
-          <Swiper
+  <Swiper
   modules={[Navigation, Pagination]}
   navigation
   pagination={{ clickable: true }}
-  spaceBetween={20}
+
   slidesPerView={1}
   className="slider"
 >
   <SwiperSlide>
     <img
-      src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      alt=""
-    />
-  </SwiperSlide>
-
-  <SwiperSlide>
-    <img
       src="https://images.pexels.com/photos/1462935/pexels-photo-1462935.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      alt=""
+      alt="image"
     />
   </SwiperSlide>
 
   <SwiperSlide>
     <img
       src="https://images.pexels.com/photos/1054777/pexels-photo-1054777.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      alt=""
+      alt="image"
     />
   </SwiperSlide>
 </Swiper>

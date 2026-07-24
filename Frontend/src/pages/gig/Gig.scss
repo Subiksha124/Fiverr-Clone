@@ -13,6 +13,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      min-width:0;
 
       .breadcrumbs {
         font-weight: 300;
@@ -22,12 +23,14 @@
       }
 
       h1 {
+        min-width:0;
       }
 
       .user {
         display: flex;
         align-items: center;
         gap: 10px;
+        min-width:0;
 
         .pp {
           width: 32px;
@@ -247,6 +250,7 @@
       max-height: 500px;
       position: sticky;
       top: 150px;
+      min-width:0;
 
       .price {
         display: flex;
